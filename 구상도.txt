@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#timer {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    right: 500px;
+}
+
+#letter {
+    display: inline-block;
+    position: relative;
+    right: 500px;   
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+td.revealed {
+    background-color: #fff;
+}
+
+td.mine {
+    background-color: red;
+}
+
+#reset {
+    position: relative;
+    bottom: 450px;
+    padding: 15px 30px;
+    border: none;
+    background-color: violet;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+#reset:hover {
+    background-color: blueviolet;
+}
+
+#minefield {
+    display: inline-block;
+    position: relative;
+    bottom: 500px;
+}
+
+h1 {
+    position: relative;
+    top: 10px;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    color: transparent;
+    -webkit-background-clip: text;
+    right: 500px;
+}
+
+.Ranking {
+    display: inline-block;
+    position: relative;
+    right: 500px;
+}
+#game-clear{
+    display: none;
+    z-index: 1;
+    
+}
