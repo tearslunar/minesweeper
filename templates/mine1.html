@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지뢰찾기 게임</title>
+    <link rel="stylesheet" href="/static/style2.css">
+</head>
+<body>
+
+<h1>지뢰찾기 게임</h1>
+
+<div class="setting">
+    <img src="/static/icon.png" alt="" id="icon" onmouseover="this.src = '/static/icon2.png'" onmouseout="this.src='/static/icon.png'">
+</div>
+
+<div id="setting-modal">
+    <div class="modal">
+        <h2>환경 설정</h2>
+        <div class="Bcolor">
+            <input type="color" id="colorPicker" value="#ffffff">
+            <button id="setColorBtn">배경색 변경</button>
+            <label>
+                <input type="checkbox" id="gradientCheckbox"> 그라데이션
+            </label>
+        </div>
+        <div class="minetablesetting">
+            <div class="input-group">
+                <label for="countset">지뢰 :</label>
+                <input type="text" id="countset">
+            </div>
+            
+            <div class="input-group">
+                <label for="tableWidthset">가로 :</label>
+                <input type="text" id="tableWidthset">
+            </div>
+            
+            <div class="input-group">
+                <label for="tableHeightset">세로 :</label>
+                <input type="text" id="tableHeightset">
+            </div>
+        </div>
+        <button id="setclose">닫기</button>
+    </div>
+</div>
+<div class="timers">
+    <h2 id="letter">소요시간</h2>
+    <div id="timer">00:00</div>    
+</div>
+<div class="Ranking">
+    <h3>순위</h3>
+    <div id="rankings"></div> <!-- 순위를 표시할 부분 추가 -->
+</div>
+
+<div id="game-over" style="display: none; z-index: 1;">
+    <div class="overm">
+        <h3>게임 오버!</h3>
+        <button id="reset1">다시 시작</button>
+    </div>
+</div>
+
+<div id="game-clear">
+    <div class="clearm">
+        <h3>축하합니다!</h3>
+        <input type="text" id="player-name" placeholder="이름을 입력하세요" />
+        <button id="submit-score">점수 제출</button>
+    </div>
+</div>
+
+<table id="minefield"></table>
+<button id="reset">다시 시작</button>
+
+<script src="/static/script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지뢰찾기 게임</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>지뢰찾기 게임</h1>
+    <div class="mineimg">
+        <img src="/static/mine.jpg" alt="">
+    </div>
+    <div class="b1">
+        <button id="startButton" >게임 시작</button>
+        <button id="instructionsButton">게임 설명</button>  
+    </div>
+    <div class="instructions" id="instructions" style="display:none;">
+        <p>지뢰찾기 게임의 규칙은 다음과 같습니다:</p>
+        <ul>
+            <p>지뢰가 있는 칸을 피하고 안전한 칸을 찾아야 합니다.</p>
+            <p>주어진 칸을 클릭하여 그 칸 주변의 지뢰 수를 확인할 수 있습니다.</p>
+            <p>지뢰를 클릭하면 게임이 끝납니다.</p>
+        </ul>
+        <button id="closeInstructionsButton">닫기</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
